@@ -28,7 +28,7 @@ for path in site.getsitepackages():
 CONFIG_FILE = 'config.json'
 
 # ========================================================
-# [라이브러리 호환성 패치 - 강화 버전]
+# [라이브러리 호환성 패치]
 # ========================================================
 GvasFile = None
 CustomEncoder = None
@@ -96,7 +96,7 @@ class PalworldMigratorApp:
         self.master = master
         master.title("팰월드 세이브 양방향 변환기")
         
-        # --- [최종 확장] 창 크기 정의 (1000x1000) ---
+        # --- 창 크기 정의 ---
         self.window_width = 1000 
         self.window_height = 1000 
         
@@ -536,6 +536,7 @@ A: 최신 버전의 palworld-save-tools를 사용합니다.
 라이선스: MIT
 
 제작자: Dangel
+GitHub: https://github.com/Dangel165
 
 주요 기능:
 ✓ 싱글 ↔ 서버 양방향 변환
@@ -558,8 +559,6 @@ pip install palworld-save-tools
 - 파일 권한 확인
 - 저장 공간 확인
 
-지원:
-GitHub: https://github.com/KuraFire/palworld-save-tools
         """
         self.show_info_window("정보", about_text)
 
